@@ -1,4 +1,4 @@
-IN PROGRESS: Perform Data preprocessing
+DONE: Perform Data preprocessing
 IN PROGRESS: Perform Modeling
 TODO: Evaluate Model
 
