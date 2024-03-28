@@ -1,0 +1,44 @@
+1. initialize a git tracker using: git init
+2. view file list using: ls -a (to view git init)
+3. edit tasks.txt using: nano ./tasks.txt
+4. observe changes using: git diff
+5. view staging area using: git status
+6. remove untracked files using: git clean -n (show) or git clean -f (delete)
+7. stage the modified tasks.txt using: git add <file>
+8. review staging area using: git diff
+9. commit changes using: git commit -m <msg>
+10. view staging area using: git status (nothing new to commit)./nano
+11. add something to the commit message using: git commit --amend -m <msg>
+12. make changes to data/eastern using: ./nano <abs/path/file>
+12. list all commits in the current repo: git log
+13. compare using: git diff HEAD
+14. compare using: git diff HEAD~<n> comparing with the latest commit-n
+15. compare using: git diff commit_id
+16. view all commits and users related to a file: git annotate <file>
+17. compare the previous commit to the previous one: git diff HEAD~<n>..HEAD~<n-1>
+18. stage all changes using: git add .
+19. if any file is required to be untracked, add it to .gitignore
+19. before commiting, we need to remove the files we want to ignore from cache then commit: git rm --cached ./data/untracked
+20. view local configurations, related to the project: git config --list --local
+21. view global configurations, related to all projects: git config --list --global
+22. view system configurations, related to the current system we're using: git config --list --system
+22. add a remote origin url:  git remote add https://github.com/<user>/<repo>.git
+23. change a configuration: git config --local remote_origin_2.url https://github.com/mohamedteltoukhy/git_demo2
+24. unstage files from staging area: git reset <file> 
+25. undo changes: git checkout -- <file>
+26. revert to an old commit: git revert --no-commit <commit_id>..HEAD you'll need to commit again as it's recorded as a modification.
+27. show the history of a certain file: git log <file>
+28. show the history of the head (reference to a certain commit): git reflog
+=====================================BREAK=====================================
+29. list all branches
+30. change the branch we're in using: git checkout <branch_name>
+31. create a new branch: git checkout -b <branch_name>
+32. compare between 2 branches using: git diff <branch_name>..<branch_name>
+33. create a conflict (edit the same line in 2 branches, then try to merge them)
+34. merge between 2 branches using: git merge <branch1> <branch2> (the merge happens on the second branch).
+35. delete the branch and keep master: git branch -d <branch name>
+=====================================Pushing to Github==========================
+35. make the origin point to repo url: git remote add origin <url>
+36. git push origin <branch>
+37. clone using: git clone <repo_url>
+38. you can also do git pull to get the updated version from the master branch.

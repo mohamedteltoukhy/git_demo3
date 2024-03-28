@@ -1,0 +1,8 @@
+TODO: Perform Data preprocessing
+TODO: Perform Modeling
+TODO: Evaluate Model
+
+Developers:
+Developer1
+Yet another Developer1
+Developer2
